@@ -1,11 +1,11 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Line from '../components/line/line.vue'
+import Home from '../components/home/Home.vue'
 
 const routes = [
     {
-        path: '/dashboard',
-        name: 'Line.index',
-        component: Line
+        path: '/',
+        name: 'Home.index',
+        component: Home
     }
 ];
 
