@@ -46,7 +46,10 @@
     <section class="content">
 
       <!-- Default box -->
-      <div class="card">
+      <div class="card card-info">
+        <div class="card-header">
+            <h3 class="card-title">بيانات الطبيب</h3>
+        </div>
         <div class="card-body row">
             <div class="col-sm-6">
                 <div class="mb-2"><input class="form-control form-control-lg" type="text" placeholder="الاسم"></div>

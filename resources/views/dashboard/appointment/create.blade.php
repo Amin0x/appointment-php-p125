@@ -49,7 +49,7 @@
         <div class="row">
           <div class="col-12">
             <!-- Default box -->
-            <div class="card">
+            <div class="card card-info">
               <div class="card-header">
                 <h3 class="card-title">حجز جديد</h3>
 
@@ -68,7 +68,7 @@
                 <input class="form-control form-control-lg" type="text" placeholder="رقم الهاتف">
                 <br>
                 <div class="form-group">
-                    <label>Date:</label>
+                    <label class="text-muted">تاريخ المقابلة:</label>
                       <div class="input-group date" id="reservationdate" data-target-input="nearest">
                           <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
                           <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
@@ -93,7 +93,7 @@
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                <button type="submit" class="btn btn-primary">ارسال</button>
+                <button type="submit" class="btn btn-info">ارسال</button>
               </div>
               <!-- /.card-footer-->
             </div>
