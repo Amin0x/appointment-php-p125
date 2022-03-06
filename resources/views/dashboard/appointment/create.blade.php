@@ -33,9 +33,9 @@
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="#">الرئيسية</a></li>
-              <li class="breadcrumb-item"><a href="#">المقابلات</a></li>
-              <li class="breadcrumb-item active">عرض المقابلات</li>
+              <li class="breadcrumb-item"><a href="{{ route('dashbord.index') }}">الرئيسية</a></li>
+              <li class="breadcrumb-item"><a href="{{ route('dashbord.appointment.index') }}">المقابلات</a></li>
+              <li class="breadcrumb-item active">انشاء مقابلة</li>
             </ol>
           </div>
         </div>
@@ -51,7 +51,7 @@
             <!-- Default box -->
             <div class="card">
               <div class="card-header">
-                <h3 class="card-title">Title</h3>
+                <h3 class="card-title">حجز جديد</h3>
 
                 <div class="card-tools">
                   <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -63,11 +63,37 @@
                 </div>
               </div>
               <div class="card-body">
-                Start creating your amazing application!
+                <input class="form-control form-control-lg" type="text" placeholder="الاسم">
+                <br>
+                <input class="form-control form-control-lg" type="text" placeholder="رقم الهاتف">
+                <br>
+                <div class="form-group">
+                    <label>Date:</label>
+                      <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                          <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate">
+                          <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                          </div>
+                      </div>
+                </div>
+                <br>
+                <input class="form-control form-control-lg" type="text" placeholder="ملاحظة">
+                {{-- <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">الاسم</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="الاسم">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputEmail3" class="col-sm-2 col-form-label">رقم الهاتف</label>
+                    <div class="col-sm-10">
+                      <input type="email" class="form-control" id="inputEmail3" placeholder="رقم الهاتف">
+                    </div>
+                </div> --}}
               </div>
               <!-- /.card-body -->
               <div class="card-footer">
-                Footer
+                <button type="submit" class="btn btn-primary">ارسال</button>
               </div>
               <!-- /.card-footer-->
             </div>

@@ -1,8 +1,8 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="/dashboard" class="brand-link">
-      <img src="vendors/admin/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+    <a href="{{ route('dashbord.index') }}" class="brand-link">
+      <img src="{{ asset('vendors/admin/img/AdminLTELogo.png') }}" alt="Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
       <span class="brand-text font-weight-light">لوحة التحكم</span>
     </a>
     <!-- Sidebar -->
@@ -45,13 +45,13 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="../../index.html" class="nav-link">
+                            <a href="{{ route('dashbord.appointment.index') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>تصفح المقابلات</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="../../index2.html" class="nav-link">
+                            <a href="{{ route('dashbord.appointment.create') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>اضافة مقابلة</p>
                             </a>
@@ -124,24 +124,24 @@
                     <a href="#" class="nav-link">
                         <i class="nav-icon fas fa-tree"></i>
                         <p>
-                            UI Elements
+                            الاطباء والعيادات
                             <i class="fas fa-angle-left right"></i>
                         </p>
                     </a>
-                    {{-- <ul class="nav nav-treeview">
+                    <ul class="nav nav-treeview">
                         <li class="nav-item">
-                        <a href="../UI/general.html" class="nav-link">
+                        <a href="{{ route('dashbord.doctor.index') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>General</p>
+                            <p>عرض الاطباء</p>
                         </a>
                         </li>
                         <li class="nav-item">
-                        <a href="../UI/ribbons.html" class="nav-link">
+                        <a href="{{ route('dashbord.doctor.create') }}" class="nav-link">
                             <i class="far fa-circle nav-icon"></i>
-                            <p>Ribbons</p>
+                            <p>اضافة طبيب</p>
                         </a>
                         </li>
-                    </ul> --}}
+                    </ul>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">

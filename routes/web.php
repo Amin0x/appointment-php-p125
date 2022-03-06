@@ -17,9 +17,26 @@ Route::get('/', function () {
     return view('welcome');
 })->name('index');
 
+
+Route::get('/dashboard/contact-us', function () {
+    return view('dashboard.contact-us');
+})->name('dashboard.contact_us');
+
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->name('dashbord.index');
+
+Route::get('/dashboard/doctor', function () {
+    return view('dashboard.doctor.index');
+})->name('dashbord.doctor.index');
+
+Route::get('/dashboard/doctor/create', function () {
+    return view('dashboard.doctor.create');
+})->name('dashbord.doctor.create');
+
+Route::get('/dashboard/appointment/', function () {
+    return view('dashboard.appointment.list');
+})->name('dashbord.appointment.index');
 
 Route::get('/dashboard/appointment/create', function () {
     return view('dashboard.appointment.create');
@@ -29,3 +46,5 @@ Route::get('/dashboard/appointment/create', function () {
 Route::get('/dashboard/appointment/{id}/add-line', function () {
     return view('dashboard.appointment.add-line');
 })->name('dashbord.appointment.add_line');
+
+
