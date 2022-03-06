@@ -20,3 +20,12 @@ Route::get('/', function () {
 Route::get('/dashboard', function () {
     return view('dashboard.index');
 })->name('dashbord.index');
+
+Route::get('/dashboard/appointment/create', function () {
+    return view('dashboard.appointment.create');
+})->name('dashbord.appointment.create');
+
+// add appointment to line
+Route::get('/dashboard/appointment/{id}/add-line', function () {
+    return view('dashboard.appointment.add-line');
+})->name('dashbord.appointment.add_line');
