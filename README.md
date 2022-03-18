@@ -22,3 +22,19 @@ A notification will be sent to customers when it’s their turn to be served.
 == Customer feedback and NPS (Net Promotor Score)
 == Demand forecast, service trends and analysis, daily patterns on booking and arrival
 == Branch performance and staff benchmark, measured in service level indicators like KPIs and SLA
+
+واجهه عرض صاله الانتظار للمرضى بالمستشفى
+
+التحكم اضافه حذف تعديل صلاحيات المستخدمين اضافة مستخدمين
+
+تسجيل المرضى عوده مريض لعند الدكتور
+
+اضافه دكتور او تعديل او حذف
+
+اضافه تخصص العيادة خدمات باطني عظام الخ.
+
+واضافة فروع للمستشفى
+
+لوحة خاصة بالسكرتاريه تستطيع من خلالها تسجيل بشكل يدوي للمرضى وتحكم فيها بشاشه العرض..
+
+وصفحة خاصة لتسجيل المرضى اون لاين اقدر افتح او اغلق التسجيل واتحكم في مواعيد التسجيل للمرضى اليوم والوقت وكذلك عدد المرضى المسموح لهم خلال اليوم
