@@ -13,9 +13,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-})->name('index');
 
 
 Route::get('/dashboard/contact-us', function () {
@@ -46,5 +43,25 @@ Route::get('/dashboard/appointment/create', function () {
 Route::get('/dashboard/appointment/{id}/add-line', function () {
     return view('dashboard.appointment.add-line');
 })->name('dashbord.appointment.add_line');
+
+//Route::get('/{any}', 'SiteController@index')->where('any', '^(?!api).*$');
+Route::get('/{any}', function(){return view('welcome');})->where('any', '^(?!api).*$');
+
+Route::get('/login', function () {
+    return view('forentend.index');
+})->name('login');
+
+
+Route::get('/', function () {
+    return view('welcome');
+})->name('index');
+
+Route::get('/register', function () {
+    return view('forentend.register');
+})->name('register');
+
+Route::get('/appointments/add', function () {
+    return view('forentend.add-appointment');
+})->name('add-appointment');
 
 

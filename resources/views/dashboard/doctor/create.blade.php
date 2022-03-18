@@ -7,6 +7,7 @@
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;700&display=swap" rel="stylesheet"> 
   <!-- Font Awesome -->
   <link rel="stylesheet" href={{ asset("vendors/admin/plugins/fontawesome-free/css/all.min.css") }}>
   <!-- overlayScrollbars -->

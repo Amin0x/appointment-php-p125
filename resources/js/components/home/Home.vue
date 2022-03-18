@@ -1,40 +1,25 @@
 <template>
-    <div>
-        <div>
-
-        </div>
-        <div>
-            <div>
-                <h2>مواعيدي</h2>
-            </div>
-            <p>دكتوري - مقابلتي - مكاني</p>
-        </div>
-        <div>
-            <button class="btn">مريض</button>
-            <button class="btn">طبيب</button>
-        </div>
-        <dir>
-            <input type="text" placeholder="اسم المستخدم">
-        </dir>
-        <dir>
-            <input type="password" placeholder="كلمة المرور">
-        </dir>
-        <div>
-            <button>دخول</button>
-        </div>
-        <p><a href="#">نسيت كلمة السر؟</a></p>
-    </div>
+  <div id="app">
+    <router-link to="/Login">login</router-link>
+  </div>
 </template>
 
 <script>
 export default {
-
-}
+    name:"Home",
+  props: {
+    msg: String,
+  },
+  components: {},
+  setup(props) {},
+  data() {
+    return {
+      count: 0,
+    };
+  },
+  methods: {},
+};
 </script>
 
 <style>
-    body {
-        color: #fff;
-        background-color: #0f73c9;
-    }
 </style>

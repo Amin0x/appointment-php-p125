@@ -1,18 +1,24 @@
-<template>
+!<template>
     <div id="app" class="bg-sky-700 h-screen pt-12">
         <div class="flex justify-center justify-items-center items-center content-center">
-            <div class="shadow-sm rounded-lg bg-white p-4 w-1/5 md:w-100">
+            <div class="shadow-sm rounded-lg bg-white p-4 md:w-1/2 lg:w-1/5 w-full mx-3">
                 <div>
                     <div class="text-3xl text-center">
-                        <h2>تسجيل الدخول</h2>
+                        <h2>التسجيل</h2>
                     </div>
                 </div>
 
                 <div class="mt-8">
-                    <input type="text" placeholder="اسم المستخدم" class="w-full p-3 rounded border-cyan-600 border">
+                    <input type="text" placeholder="رقم الهاتف" class="w-full p-3 rounded border-cyan-600 border">
+                </div>
+                <div class="mt-3">
+                    <input type="text" placeholder="الاسم كامل" class="w-full p-3 rounded border-cyan-600 border">
                 </div>
                 <div class="mt-3">
                     <input type="password" placeholder="كلمة المرور" class="w-full p-3 rounded border-cyan-600 border">
+                </div>
+                <div class="mt-3">
+                    <input type="password" placeholder=" تاكيد كلمة المرور" class="w-full p-3 rounded border-cyan-600 border">
                 </div>
 
                 <p class="text-sm text-slate-400 hover:text-slate-700"><a href="#">نسيت كلمة السر؟</a></p>
@@ -26,16 +32,14 @@
 
 <script>
 export default {
-  name: "Login",
-  setup(props) {},
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {},
-};
+    setup () {
+
+
+        return {}
+    }
+}
 </script>
 
-<style>
+<style lang="scss" scoped>
+
 </style>

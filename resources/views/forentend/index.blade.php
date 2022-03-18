@@ -1,4 +1,17 @@
-<template>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
     <div id="app" class="bg-sky-700 h-screen pt-12">
         <div class="flex justify-center justify-items-center items-center content-center">
             <div class="shadow-sm rounded-lg bg-white p-4 w-1/5 md:w-100">
@@ -22,20 +35,6 @@
             </div>
         </div>
     </div>
-</template>
+</body>
 
-<script>
-export default {
-  name: "Login",
-  setup(props) {},
-  data() {
-    return {
-      count: 0,
-    };
-  },
-  methods: {},
-};
-</script>
-
-<style>
-</style>
+</html>
